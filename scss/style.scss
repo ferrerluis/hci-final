@@ -1,0 +1,164 @@
+$title-font: 'Ovo', serif;
+$text-font: 'Muli', sans-serif;
+$red: #ED382F;
+$white: #FFFFFF;
+$gray: #EEEEEE;
+$dark-gray: #DADADA;
+$brown: #D9AE61;
+$black: #222222;
+$yellow: #F7B538;
+
+body {
+    
+    margin: 0;
+    padding: 1rem;
+    font-family: $text-font;
+    background-color: $white;
+    font-size: 1.1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    
+    font-family: $title-font;
+}
+
+nav {
+    
+    padding: 0.7rem 1rem;
+    color: $white;
+    background-color: $yellow;
+    overflow: auto;
+    
+    &>* {
+        
+        display: block;
+        margin: 0;
+    }
+    
+    & a {
+        
+        text-decoration: none;
+        color: $white;
+        transition: all 0.2s;
+        
+        &:hover {
+            
+            color: $black;
+        }
+    }
+    
+    & .title {
+        
+        @extend h1;
+        font-size: 1.3rem;
+        float: left;
+    }
+    
+    & .options {
+     
+        float: right;
+        text-decoration: underline;
+    }
+}
+
+.container {
+    
+    margin-top: 1rem;
+    background-color: $gray;
+    
+    &:first-of-type {
+        
+        margin-top: 0;
+    }
+}
+
+section {
+    
+    padding: 1rem;
+    
+    &:nth-of-type(even) {
+        
+        background-color: $dark-gray;
+    }
+}
+
+.card {
+    
+    background-color: $white;
+    padding: 1rem;
+    
+    &>*:first-child {
+        
+        display: block;
+        text-align: center;
+        
+        margin: -1rem -1rem 1rem -1rem;
+        padding: 0.5rem;
+        
+        color: $white;
+        background-color: $black;
+    }
+    
+    &.brown {
+        
+        color: $white;
+        background-color: $brown;
+    }
+    
+    &.black {
+        
+        color: $white;
+        background-color: $black;
+    }
+    
+    &.red {
+        
+        color: $white;
+        background-color: $red;
+    }
+}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0;
+	margin: 0;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 0 0 0 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF FOUR  */
+.span_4_of_4 {
+	width: 100%;
+    box-sizing: border-box;
+}
+.span_3_of_4 {
+	width: 74.6%;
+    box-sizing: border-box;
+}
+.span_2_of_4 {
+	width: 49.2%;
+    box-sizing: border-box;
+}
+.span_1_of_4 {
+	width: 23.8%;
+    box-sizing: border-box;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%; }
+}

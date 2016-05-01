@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: "Muli", sans-serif;
+  background-color: #FFFFFF;
+  font-size: 1.1rem; }
+
+h1, nav .title, h2, h3, h4, h5, h6 {
+  font-family: "Ovo", serif; }
+
+nav {
+  padding: 0.7rem 1rem;
+  color: #FFFFFF;
+  background-color: #F7B538;
+  overflow: auto; }
+  nav > * {
+    display: block;
+    margin: 0; }
+  nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: all 0.2s; }
+    nav a:hover {
+      color: #222222; }
+  nav .title {
+    font-size: 1.3rem;
+    float: left; }
+  nav .options {
+    float: right;
+    text-decoration: underline; }
+
+.container {
+  margin-top: 1rem;
+  background-color: #EEEEEE; }
+  .container:first-of-type {
+    margin-top: 0; }
+
+section {
+  padding: 1rem; }
+  section:nth-of-type(even) {
+    background-color: #DADADA; }
+
+.card {
+  background-color: #FFFFFF;
+  padding: 1rem; }
+  .card > *:first-child {
+    display: block;
+    text-align: center;
+    margin: -1rem -1rem 1rem -1rem;
+    padding: 0.5rem;
+    color: #FFFFFF;
+    background-color: #222222; }
+  .card.brown {
+    color: #FFFFFF;
+    background-color: #D9AE61; }
+  .card.black {
+    color: #FFFFFF;
+    background-color: #222222; }
+  .card.red {
+    color: #FFFFFF;
+    background-color: #ED382F; }
+
+/*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0;
+  margin: 0; }
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float: left;
+  margin: 0 0 0 1.6%; }
+
+.col:first-child {
+  margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  zoom: 1;
+  /* For IE 6/7 */ }
+
+/*  GRID OF FOUR  */
+.span_4_of_4 {
+  width: 100%;
+  box-sizing: border-box; }
+
+.span_3_of_4 {
+  width: 74.6%;
+  box-sizing: border-box; }
+
+.span_2_of_4 {
+  width: 49.2%;
+  box-sizing: border-box; }
+
+.span_1_of_4 {
+  width: 23.8%;
+  box-sizing: border-box; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0%; }
+
+  .span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 {
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
