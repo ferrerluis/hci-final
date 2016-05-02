@@ -28,8 +28,7 @@ nav {
     font-size: 1.3rem;
     float: left; }
   nav .options {
-    float: right;
-    text-decoration: underline; }
+    float: right; }
     nav .options .option {
       display: inline-block;
       padding: 1rem;
@@ -86,10 +85,12 @@ section {
   .card > *:first-child {
     display: block;
     text-align: center;
-    margin: -1rem -1rem 1rem -1rem;
+    margin: -1rem -1rem -0.5rem -1rem;
     padding: 0.5rem;
     color: #FFFFFF;
     background-color: #222222; }
+  .card > *:last-child {
+    margin-bottom: 0; }
   .card.yellow {
     color: #FFFFFF;
     background-color: #FFA723; }

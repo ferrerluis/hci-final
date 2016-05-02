@@ -60,8 +60,7 @@ nav {
     & .options {
      
         float: right;
-        text-decoration: underline;
-        
+                
         & .option {
             
             display: inline-block;
@@ -164,11 +163,16 @@ section {
         display: block;
         text-align: center;
         
-        margin: -1rem -1rem 1rem -1rem;
+        margin: -1rem -1rem -0.5rem -1rem;
         padding: 0.5rem;
         
         color: $white;
         background-color: $black;
+    }
+    
+    &>*:last-child {
+        
+        margin-bottom: 0;
     }
     
     &.yellow {
