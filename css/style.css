@@ -11,7 +11,7 @@ h1, nav .title, h2, h3, h4, h5, h6 {
 
 nav {
   color: #FFFFFF;
-  background-color: #FFBA3A;
+  background-color: #2A2A2A;
   overflow: auto; }
   nav > * {
     display: block;
@@ -21,7 +21,7 @@ nav {
     color: #FFFFFF;
     transition: all 0.2s; }
     nav a:hover {
-      color: #222222; }
+      color: #2A2A2A; }
   nav .title {
     display: block;
     padding: 1rem;
@@ -35,7 +35,7 @@ nav {
       transition: all 0.2s; }
       nav .options .option:hover {
         color: #FFFFFF;
-        background-color: #FFA723; }
+        background-color: #000000; }
 
 .main {
   padding: 4rem;
@@ -64,39 +64,81 @@ nav {
     margin: 0.5rem auto; }
 
 .container {
-  margin-top: 1rem;
-  background-color: #EEEEEE; }
+  margin-top: 1rem; }
   .container:first-of-type {
     margin-top: 0; }
 
 section {
-  padding: 1rem; }
+  padding: 2rem 0 0 0; }
   section h2 {
-    text-align: center; }
-  section:nth-of-type(even) {
-    background-color: #DADADA; }
+    text-align: center;
+    margin: 0 auto 1rem auto;
+    padding: 0.7rem;
+    color: #FFFFFF;
+    background-color: #2A2A2A; }
 
 .card {
-  background-color: #FFFFFF;
+  background-color: #EEEEEE;
   padding: 1rem;
   text-align: left; }
   .card ul {
-    padding-left: 1rem; }
+    padding-left: 1.2rem; }
   .card > *:first-child {
     display: block;
     text-align: center;
     margin: -1rem -1rem -0.5rem -1rem;
     padding: 0.5rem;
     color: #FFFFFF;
-    background-color: #222222; }
+    background-color: #2A2A2A; }
   .card > *:last-child {
     margin-bottom: 0; }
   .card.yellow {
     color: #FFFFFF;
-    background-color: #FFA723; }
+    background-color: #FFBA3A; }
   .card.red {
     color: #FFFFFF;
     background-color: #ED382F; }
+
+table {
+  border-collapse: separate;
+  border-spacing: 0.6rem;
+  margin: -0.6rem; }
+  table tr {
+    background-color: #EEEEEE; }
+    table tr td {
+      padding: 0.8rem; }
+    table tr td:first-child {
+      text-align: center;
+      color: #FFFFFF;
+      text-transform: capitalize;
+      background-color: #2A2A2A; }
+    table tr:nth-child(even) td {
+      background-color: #DDDDDD; }
+    table tr:nth-child(even) td:first-child {
+      background-color: #000000; }
+  table.yellow td:first-child {
+    background-color: #FFBA3A; }
+  table.yellow tr:nth-child(even) td:first-child {
+    background-color: #FFA723; }
+  table.red td:first-child {
+    background-color: #ED382F; }
+  table.red tr:nth-child(even) td:first-child {
+    background-color: #CC3028; }
+
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  color: #FFFFFF;
+  background-color: #2A2A2A;
+  text-align: center; }
+  footer > * {
+    margin: 0.2rem; }
+  footer > *:first-child {
+    margin-top: 0; }
+  footer > *:last-child {
+    margin-bottom: 0; }
+  footer .disclaimer {
+    color: #999; }
 
 /*  SECTIONS  */
 .section {
