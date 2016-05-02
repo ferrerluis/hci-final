@@ -4,9 +4,9 @@ $red: #ED382F;
 $white: #FFFFFF;
 $gray: #EEEEEE;
 $dark-gray: #DADADA;
-$brown: #D9AE61;
 $black: #222222;
-$yellow: #F7B538;
+$yellow: #FFBA3A;
+$dark-yellow: #FFA723;
 
 body {
     
@@ -20,11 +20,11 @@ body {
 h1, h2, h3, h4, h5, h6 {
     
     font-family: $title-font;
+    text-transform: capitalize;
 }
 
 nav {
     
-    padding: 0.7rem 1rem;
     color: $white;
     background-color: $yellow;
     overflow: auto;
@@ -50,6 +50,9 @@ nav {
     & .title {
         
         @extend h1;
+        
+        display: block;
+        padding: 1rem;
         font-size: 1.3rem;
         float: left;
     }
@@ -58,6 +61,64 @@ nav {
      
         float: right;
         text-decoration: underline;
+        
+        & .option {
+            
+            display: inline-block;
+            padding: 1rem;
+            transition: all 0.2s;
+            
+            &:hover {
+                
+                color: $white;
+                background-color: $dark-yellow;
+            }
+        }
+    }
+}
+
+.main {
+    
+    padding: 4rem;
+    background-position: center;
+    background-size: 100% auto;
+    background-image: url("images/main.jpg");
+    
+    &>* {
+        
+        display: block;
+        padding: 0.5rem;
+        color: $white;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.overlay {
+    
+    padding: 4rem 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    
+    &>*:first-child {
+        
+        margin-top: 0;
+    }
+    
+    &>*:last-child {
+        
+        margin-bottom: 0;
+    }
+    
+    h1 {
+        
+        font-size: 3rem;
+        margin: 0.5rem auto;
+    }
+    
+    p {
+        
+        font-size: 1.5rem;
+        margin: 0.5rem auto;
     }
 }
 
@@ -76,6 +137,11 @@ section {
     
     padding: 1rem;
     
+    & h2 {
+        
+        text-align: center;
+    }
+    
     &:nth-of-type(even) {
         
         background-color: $dark-gray;
@@ -86,6 +152,12 @@ section {
     
     background-color: $white;
     padding: 1rem;
+    text-align: left;
+    
+    & ul {
+        
+        padding-left: 1rem;
+    }
     
     &>*:first-child {
         
@@ -99,16 +171,10 @@ section {
         background-color: $black;
     }
     
-    &.brown {
+    &.yellow {
         
         color: $white;
-        background-color: $brown;
-    }
-    
-    &.black {
-        
-        color: $white;
-        background-color: $black;
+        background-color: $dark-yellow;
     }
     
     &.red {
