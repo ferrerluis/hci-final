@@ -136,7 +136,18 @@ nav {
 
 section {
     
-    padding: 2rem 0 0 0;
+    margin: 2rem 0 0 0;
+    
+    &.filled {
+        
+        padding: 1rem;
+        background-color: $gray;
+        
+        h2, p.details {
+            
+            margin: -1rem -1rem 1rem -1rem;            
+        }
+    }
     
     h2, p.details {
         

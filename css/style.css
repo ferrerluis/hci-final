@@ -69,7 +69,12 @@ nav {
     margin-top: 0; }
 
 section {
-  padding: 2rem 0 0 0; }
+  margin: 2rem 0 0 0; }
+  section.filled {
+    padding: 1rem;
+    background-color: #EEEEEE; }
+    section.filled h2, section.filled p.details {
+      margin: -1rem -1rem 1rem -1rem; }
   section h2, section p.details {
     text-align: center;
     margin: 0 auto 1rem auto;
