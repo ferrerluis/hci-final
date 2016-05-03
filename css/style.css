@@ -69,7 +69,8 @@ nav {
     margin-top: 0; }
 
 section {
-  margin: 2rem 0 0 0; }
+  margin: 2rem 0 0 0;
+  line-height: 150%; }
   section.filled {
     padding: 1rem;
     background-color: #EEEEEE; }
@@ -118,7 +119,8 @@ section {
     background-color: #ED382F; }
   .card img {
     width: 100%;
-    margin-top: 1.5rem; }
+    margin-top: 1.5rem;
+    box-shadow: 0 0 1.5rem #CCC; }
 
 table {
   border-collapse: separate;
